@@ -1,13 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Monsterrat alternates", sans-serif;
+}
+.navbar {
+    width: "100%";
+    height: 35px;
+    background-color: #383441;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar .menu {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+.navbar .menu .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar .menu a:hover {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  50% {
+    transform: scale(1.05); /* Más grande */
+  }
+  100% {
+    transform: scale(1); /* Regresa al tamaño normal */
+  }
+}
+
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.navbar .cart {
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar .logout:hover {
+  background-color: #ff4747;
+}
+.navbar .logout {
+  background-color: #8b2a3b;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
 }
